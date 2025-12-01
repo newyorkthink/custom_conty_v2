@@ -105,7 +105,7 @@ PACKAGES=(
 	# audio_effects_tools
 	zita-ajbridge zita-alsa-pcmi zita-bls1 zita-convolver easyeffects helvum qpwgraph tinycompress musepack-tools sndio speex speexdsp rtkit webrtc-audio-processing-1 orc
 	# audio_drivers_libraries
-	jack2 libldac sbc libfreeaptx openal libsndfile libsamplerate libsamplerate libcanberra libsoxr libasyncns libvorbis
+	libldac sbc libfreeaptx openal libsndfile libsamplerate libsamplerate libcanberra libsoxr libasyncns libvorbis
 	# network_management_tools
 	net-tools traceroute iperf libnm dhclient wireless_tools wpa_supplicant iw iwd nethogs iftop hostapd bridge-utils ethtool dnsmasq inetutils netctl dhcpcd
 	# security_tools
