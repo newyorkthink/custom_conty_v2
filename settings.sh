@@ -99,9 +99,9 @@ PACKAGES=(
 	# pulseaudio_packages
 	pulseaudio pavucontrol pavucontrol-qt pulseaudio-alsa pamixer paprefs pasystray plasma-pa pulseaudio-equalizer pulseaudio-equalizer-ladspa libpulse
 	# audio_tools_plugins
-	qastools qemu-audio-alsa drumstick kmidimon qmidiarp qmidiarp-lv2 qmidiarp-standalone fluidsynth lv2
+	# qastools qemu-audio-alsa drumstick kmidimon qmidiarp qmidiarp-lv2 qmidiarp-standalone fluidsynth lv2
 	# audio_effects_tools
-	zita-ajbridge zita-alsa-pcmi zita-bls1 zita-convolver easyeffects helvum qpwgraph tinycompress musepack-tools sndio speex speexdsp rtkit webrtc-audio-processing-1 orc
+	# zita-ajbridge zita-alsa-pcmi zita-bls1 zita-convolver easyeffects helvum qpwgraph tinycompress musepack-tools sndio speex speexdsp rtkit webrtc-audio-processing-1 orc
 	# audio_drivers_libraries
 	libldac sbc libfreeaptx openal libsndfile libsamplerate libsamplerate libcanberra libsoxr libasyncns libvorbis
 	# network_management_tools
