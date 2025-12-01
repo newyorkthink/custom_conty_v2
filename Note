@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+:<<'NOTE'
+需要封装哪个conty 就将哪个settings 改成settings.sh
+NOTE
+
+#############################################
+bwrap --dev-bind "/home/user/ArchLinux/V2ray" / --dev /dev --uid 0 /bin/bash -c "v2raya  --passcheckroot"
+./set_proxy 20171
+./set_proxy 10808
+
+#############################################
+cd ~
+echo "user" | sudo -S rm -rf ./custom_conty_v2
+clear
+cp -r ./sharedfolder/Downloads/custom_conty_v2 ./
+cd ./custom_conty_v2
+su root
+
+./create-arch-bootstrap.sh
+./create-conty.sh
+
+# root password: root
+
+#############################################
+:<<'JRIVER'
+sudo cp -r ./sharedfolder/Downloads/jriver_conty/fonts/* ./custom_conty_v2/root.x86_64/usr/share/fonts
+sudo cp -r ./sharedfolder/Downloads/jriver_conty/lib/libpixbufloader-svg.so ./custom_conty_v2/root.x86_64/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/
+sudo cp -r ./sharedfolder/Downloads/jriver_conty/lib/* ./custom_conty_v2/root.x86_64/usr/lib/
+sudo cp -r ./sharedfolder/Downloads/jriver_conty/bin/* ./custom_conty_v2/root.x86_64/usr/bin/
+JRIVER
+
+:<<'CROSSOVER'
+sudo cp -r ./sharedfolder/Downloads/crossover_conty/fonts/* ./custom_conty_v2/root.x86_64/usr/share/fonts
+sudo cp -r ./sharedfolder/Downloads/crossover_conty/lib/libpixbufloader-svg.so ./custom_conty_v2/root.x86_64/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/
+sudo cp -r ./sharedfolder/Downloads/crossover_conty/lib/* ./custom_conty_v2/root.x86_64/usr/lib/
+sudo cp -r ./sharedfolder/Downloads/crossover_conty/license/data/* ./custom_conty_v2/root.x86_64/opt/cxoffice/share/crossover/data/
+sudo cp -r ./sharedfolder/Downloads/crossover_conty/license/etc/* ./custom_conty_v2/root.x86_64/opt/cxoffice/etc/
+CROSSOVER
+
+:<<'DEFAULT'
+sudo cp -r ./sharedfolder/Downloads/base_conty/fonts/* ./custom_conty_v2/root.x86_64/usr/share/fonts
+sudo cp -r ./sharedfolder/Downloads/base_conty/lib/libpixbufloader-svg.so ./custom_conty_v2/root.x86_64/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/
+sudo cp -r ./sharedfolder/Downloads/base_conty/lib/* ./custom_conty_v2/root.x86_64/usr/lib/
+DEFAULT

@@ -1,0 +1,48 @@
+name: Conty CI
+
+on:
+  schedule:
+    - cron:  '0 0 * * 5'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: 'false'
+
+      - name: Download artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: utils.yml
+          workflow_conclusion: success
+          if_no_artifact_found: ignore
+          path: /opt
+
+      - name: Build Conty
+        run: |
+          if [ -f /opt/Utils/utils.tar.gz ]; then
+              cp /opt/Utils/* .
+          fi
+
+          chmod +x create-arch-bootstrap_crossover.sh create-conty.sh
+          sudo ./create-arch-bootstrap_crossover.sh \
+            && sudo cp -r ./license/etc/* /home/runner/work/conty/conty/root.x86_64/opt/cxoffice/etc/ \
+            && sudo cp -r ./license/data/* /home/runner/work/conty/conty/root.x86_64/opt/cxoffice/share/crossover/data/ \
+            && sudo cp -r ./udev/* /home/runner/work/conty/conty/root.x86_64/usr/lib/udev/ \
+            && sudo cp -r ./lib32/* /home/runner/work/conty/conty/root.x86_64/usr/lib32/ \
+            && sudo cp -r ./lib/* /home/runner/work/conty/conty/root.x86_64/usr/lib/ \
+            && ./create-conty.sh
+
+          # sudo ./create-arch-bootstrap_crossover.sh && sudo cp -r ./license/etc/* /home/runner/work/conty/conty/root.x86_64/opt/cxoffice/etc/ && sudo cp -r ./license/data/* /home/runner/work/conty/conty/root.x86_64/opt/cxoffice/share/crossover/data/ && sudo cp -r ./lib/* /home/runner/work/conty/conty/root.x86_64/usr/lib/ && ./create-conty.sh
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Conty
+          path: conty.sh
