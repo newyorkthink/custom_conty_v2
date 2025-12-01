@@ -51,7 +51,7 @@ PACKAGES=(
 	libx11 libxslt libxext libxau libxdmcp libxkbcommon libxkbcommon-x11 libxcb libxi libxrandr libxinerama libxcomposite libsm libxrender libxfixes libxdamage libxft libxtst libxv
 	# multimedia_tools
 	mpv ffmpeg audacity audacity-docs qview feh nsxiv imagemagick gpicview v4l-utils gst-plugins-espeak
-	gstreamer gstreamer-vaapi gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-bad gst-plugins-bad-libs gst-plugins-ugly gst-libav gst-plugin-pipewire 	
+	gstreamer gstreamer-vaapi gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-bad gst-plugins-bad-libs gst-plugins-ugly gst-libav
 	# file_manager_tools
 	libfm-qt tumbler ffmpegthumbnailer libgepub libgsf libopenraw poppler poppler-glib nautilus nautilus-image-converter nautilus-python nautilus-share
 	# gvfs_packages
@@ -98,8 +98,6 @@ PACKAGES=(
 	alsa-card-profiles alsa-lib alsa-oss alsa-plugins alsa-scarlett-gui alsa-tools alsa-topology-conf alsa-ucm-conf alsa-utils
 	# pulseaudio_packages
 	pulseaudio pavucontrol pavucontrol-qt pulseaudio-alsa pamixer paprefs pasystray plasma-pa pulseaudio-equalizer pulseaudio-equalizer-ladspa libpulse
-	# pipewire_packages
-	pipewire-audio wireplumber
 	# audio_tools_plugins
 	qastools qemu-audio-alsa drumstick kmidimon qmidiarp qmidiarp-lv2 qmidiarp-standalone fluidsynth lv2
 	# audio_effects_tools
