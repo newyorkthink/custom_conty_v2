@@ -12,18 +12,18 @@ PACKAGES=(
 	# terminal_emulators
 	lxterminal rxvt-unicode xterm xfce4-terminal
 	# text_editors
-	nano leafpad mousepad gedit gedit-plugins
+	nano mousepad gedit gedit-plugins
 	# pdf_utilities
 	evince evince-lib-docs pdftk pdfgrep okular
 	# shell_tools
 	zsh zsh-autosuggestions zsh-completions zsh-doc zsh-history-substring-search zsh-syntax-highlighting dash bash bash-completion
 	# compression_cli_tools
-	p7zip gzip bzip2 pbzip2 xz pixz zip unzip minizip zstd arj unarj lrzsz tar atool pax cpio
+	gzip bzip2 pbzip2 xz pixz zip unzip minizip zstd arj unarj lrzsz tar atool pax cpio
 	# gui_compression_tools
 	file-roller ark
   # qt_dependencies
-  qt5ct qt5-base qt5-wayland qt5-tools qt5-declarative qt5-multimedia qt5-webengine qt5-x11extras qt5-graphicaleffects qt5-imageformats qt5-location qt5-quickcontrols
-	qt5-quickcontrols2 qt5-systems qt5-webchannel qt5-websockets qt5-svg kvantum kvantum-qt5 qt6ct qt6-base qt6-wayland qt6-tools qt6-declarative qt6-multimedia
+  qt5ct qt5-base qt5-wayland qt5-tools qt5-declarative qt5-multimedia qt5-x11extras qt5-graphicaleffects qt5-imageformats qt5-location qt5-quickcontrols
+	qt5-quickcontrols2 qt5-systems qt5-svg kvantum kvantum-qt5 qt6ct qt6-base qt6-wayland qt6-tools qt6-declarative qt6-multimedia
 	qt6-webengine qt6-imageformats qt6-multimedia-gstreamer qt6-networkauth qt6-webchannel qt6-websockets qt6-webview
 	# input_method_frameworks
 	fcitx5 fcitx5-anthy fcitx5-bamboo fcitx5-breeze fcitx5-chewing fcitx5-chinese-addons fcitx5-configtool fcitx5-gtk fcitx5-hangul fcitx5-kkc fcitx5-libthai fcitx5-lua
@@ -37,20 +37,20 @@ PACKAGES=(
 	ttf-dejavu ttf-droid ttf-dejavu-nerd ttf-liberation ttf-roboto-mono ttf-roboto-mono-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono wqy-bitmapfont wqy-zenhei wqy-microhei
   adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 	# desktop_themes
-	sound-theme-freedesktop gnome-themes-extra hicolor-icon-theme gtk-engine-murrine papirus-icon-theme adwaita-icon-theme adw-gtk-theme adwaita-cursors materia-gtk-theme 
+	sound-theme-freedesktop gnome-themes-extra hicolor-icon-theme papirus-icon-theme adwaita-icon-theme adw-gtk-theme adwaita-cursors materia-gtk-theme 
 	kvantum-theme-materia
 	# spellcheck_tools
-	enchant aspell hspell hunspell gspell gtkspell codespell nuspell
+	enchant aspell hspell hunspell gspell codespell nuspell
 	# package_management_tools
 	rpmextract rpm-sequoia dpkg yay pacredir pkgfile pacman-contrib
 	# wayland_packages
-	wayland wayland-protocols wlroots wayland-utils xdg-desktop-portal xdg-desktop-portal-gtk
+	wayland wayland-protocols wayland-utils xdg-desktop-portal xdg-desktop-portal-gtk
 	# xorg_packages
 	xorg-server xorg-server-common xorg-server-devel xorg-xinit xorg-xinput xorg-xwayland xorg-server-xephyr xorg-xrandr xorg-xset xorg-xprop xorg-font-util xorg-xkbcomp xorg-docs
 	# x11_core_libraries
 	libx11 libxslt libxext libxau libxdmcp libxkbcommon libxkbcommon-x11 libxcb libxi libxrandr libxinerama libxcomposite libsm libxrender libxfixes libxdamage libxft libxtst libxv
 	# multimedia_tools
-	mpv simplescreenrecorder ffmpeg audacity audacity-docs qview feh nsxiv nitrogen imagemagick gpicview v4l-utils gst-plugins-espeak
+	mpv ffmpeg audacity audacity-docs qview feh nsxiv imagemagick gpicview v4l-utils gst-plugins-espeak
 	gstreamer gstreamer-vaapi gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-bad gst-plugins-bad-libs gst-plugins-ugly gst-libav gst-plugin-pipewire 	
 	# file_manager_tools
 	libfm-qt tumbler ffmpegthumbnailer libgepub libgsf libopenraw poppler poppler-glib nautilus nautilus-image-converter nautilus-python nautilus-share
@@ -65,16 +65,16 @@ PACKAGES=(
 	# cpp_dev_tools
 	cmake glibc gcc-libs clang make ninja gdb
 	# development_tools
-	base-devel devtools binutils meson autoconf automake strace patch pkg-config git htop
+	base-devel devtools binutils meson autoconf automake strace patch git htop
 	# bluetooth_management_packages
 	bluez bluez-cups bluez-deprecated-tools bluez-hid2hci bluez-libs bluez-mesh bluez-obex bluez-qt bluez-qt5 bluez-tools bluez-utils blueberry blueman bluedevil gnome-bluetooth 
 	gnome-bluetooth-3.0 switchboard-plug-bluetooth pulseaudio-bluetooth
 	# gtk_packages
-	gtk2 gtk3 gtk4 webkit2gtk webkit2gtk-docs webkit2gtk-4.1 webkit2gtk-4.1-docs glib2
+	gtk3 gtk4 webkit2gtk webkit2gtk-docs webkit2gtk-4.1 webkit2gtk-4.1-docs glib2
 	# gnome_environment_tools
 	gnome-tweaks gnome-control-center gnome-system-monitor gnome-disk-utility baobab gnome-settings-daemon gnome-characters gnome-logs
 	# openbox_environment
-	openbox lxappearance libnotify libappindicator-gtk3 libxft libvoikko at-spi2-core
+	openbox lxappearance libnotify libxft libvoikko at-spi2-core
 	# firmware_packages
 	sof-firmware linux-firmware alsa-firmware intel-ucode amd-ucode
 	# haskell_libraries
@@ -86,14 +86,14 @@ PACKAGES=(
 	# utility_software_packages
 	dconf dconf-editor hplip meld psensor speedcrunch cheese qalculate-gtk kcolorchooser bleachbit peek flameshot shutter filezilla
 	# video_acceleration
-	libva libva-mesa-driver libva-intel-driver mesa-vdpau vdpauinfo libvdpau libvdpau-va-gl
+	libva libva-intel-driver vdpauinfo libvdpau libvdpau-va-gl
 	# debugging_tools
 	mesa-utils libva-utils
 	# network_manager
 	networkmanager network-manager-applet network-manager-sstp networkmanager-docs networkmanager-l2tp networkmanager-openconnect networkmanager-openvpn 
 	nm-cloud-setup networkmanager-qt5 networkmanager-strongswan networkmanager-vpnc nm-connection-editor
 	# multimedia_libs
-	libpng libjpeg-turbo giflib mpg123 sdl2 libgphoto2
+	libpng libjpeg-turbo giflib mpg123 libgphoto2
 	# alsa_packages
 	alsa-card-profiles alsa-lib alsa-oss alsa-plugins alsa-scarlett-gui alsa-tools alsa-topology-conf alsa-ucm-conf alsa-utils
 	# pulseaudio_packages
@@ -109,7 +109,7 @@ PACKAGES=(
 	# network_management_tools
 	net-tools traceroute iperf libnm dhclient wireless_tools wpa_supplicant iw iwd nethogs iftop hostapd bridge-utils ethtool dnsmasq inetutils netctl dhcpcd
 	# security_tools
-	openssh openssl lxqt-openssh-askpass openvpn iptables squid gnutls libldap qrencode haveged gnu-netcat nmap tcpdump
+	openssh openssl lxqt-openssh-askpass openvpn iptables squid gnutls libldap qrencode haveged nmap tcpdump
 	# file_system_tools
 	attr cryptsetup smartmontools parted gparted lvm2 fsarchiver gsmartcontrol mkinitcpio-nfs-utils ntfs-3g exfat-utils jfsutils util-linux dosfstools e2fsprogs 
 	btrfs-progs xfsprogs cifs-utils mdadm
@@ -179,16 +179,10 @@ LOCALES=(
 # Content of pacman mirrorrlist file before reflector is installed and used to fetch new one
 # shellcheck disable=2016
 MIRRORLIST='
-Server = https://mirror1.sl-chat.ru/archlinux/$repo/os/$arch
-Server = https://mirror3.sl-chat.ru/archlinux/$repo/os/$arch
-Server = https://us.mirrors.cicku.me/archlinux/$repo/os/$arch
-Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
-Server = https://md.mirrors.hacktegic.com/archlinux/$repo/os/$arch
-Server = https://geo.mirror.pkgbuild.com/$repo/os/$arch
-Server = https://mirror.qctronics.com/archlinux/$repo/os/$arch
-Server = https://arch.mirror.constant.com/$repo/os/$arch
-Server = https://america.mirror.pkgbuild.com/$repo/os/$arch
-Server = https://mirror.tmmworkshop.com/archlinux/$repo/os/$arch
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 '
 
 # Enable this variable to use the system-wide mksquashfs/mkdwarfs instead
