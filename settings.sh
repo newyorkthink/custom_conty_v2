@@ -101,7 +101,7 @@ PACKAGES=(
 	# audio_tools_plugins
 	# qastools qemu-audio-alsa drumstick kmidimon qmidiarp qmidiarp-lv2 qmidiarp-standalone fluidsynth lv2
 	# audio_effects_tools
-	# zita-ajbridge zita-alsa-pcmi zita-bls1 zita-convolver easyeffects helvum qpwgraph tinycompress musepack-tools sndio speex speexdsp rtkit webrtc-audio-processing-1 orc
+	zita-ajbridge zita-alsa-pcmi zita-bls1 zita-convolver easyeffects helvum qpwgraph tinycompress musepack-tools sndio speex speexdsp rtkit webrtc-audio-processing-1 orc
 	# audio_drivers_libraries
 	libldac sbc libfreeaptx openal libsndfile libsamplerate libsamplerate libcanberra libsoxr libasyncns libvorbis
 	# network_management_tools
@@ -128,7 +128,7 @@ PACKAGES=(
 )
 
 # If you want to install AUR packages, specify them in this variable
-AUR_PACKAGES=(firefox-esr)
+AUR_PACKAGES=(ungoogled-chromium)
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
